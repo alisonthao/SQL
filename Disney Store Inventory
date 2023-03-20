@@ -1,0 +1,29 @@
+--Created a Disney store database
+
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT INTO inventory VALUES
+(1, "mickey", 100, 20, 2),
+(2, "minnie", 100, 20, 2),
+(3, "stitch", 10, 15, 3),
+(4, "lilo", 50, 15, 3),
+(5, "nani", 45, 16, 3),
+(6, "pooh", 115, 14, 4),
+(7, "piglet", 100, 12, 4),
+(8, "elsa", 200, 30, 5),
+(9, "anna", 250, 30, 5),
+(10, "olaf", 200, 25, 5),
+(11, "sven", 100, 15, 5),
+(12, "moana", 80, 15, 6),
+(13, "maui", 50, 15, 6),
+(14, "tefiti", 75, 16, 6),
+(15, "heihei", 90, 14, 6);
+
+--Displayed the database ordered by price
+
+SELECT * FROM inventory
+ORDER BY price;
+
+--How many items are stocked in each aisle?
+
+SELECT aisle, sum(quantity) FROM inventory GROUP BY aisle;
