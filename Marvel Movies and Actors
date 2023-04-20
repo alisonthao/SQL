@@ -1,4 +1,4 @@
---In this SQL code, I am creating seperate tables and using the JOIN function to display data from both tables--
+--In this SQL code, I am creating seperate tables and using the JOIN function to display data from both tables together--
 
 
 --Create a table with a list of Marvel actors--
