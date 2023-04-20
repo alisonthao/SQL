@@ -1,4 +1,4 @@
---Created a Disney store database
+--Created a Disney store database--
 
 CREATE TABLE inventory (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
 
@@ -19,11 +19,15 @@ INSERT INTO inventory VALUES
 (14, "tefiti", 75, 16, 6),
 (15, "heihei", 90, 14, 6);
 
---Displayed the database ordered by price
+
+
+--Displayed the database (ordered by price)--
 
 SELECT * FROM inventory
 ORDER BY price;
 
---How many items are stocked in each aisle?
+
+
+--How many items are stocked in each aisle?--
 
 SELECT aisle, sum(quantity) FROM inventory GROUP BY aisle;
