@@ -8,12 +8,14 @@ Create table marvel_actors
     fullname TEXT,
     age INTEGER);
     
-insert into marvel_actors (fullname, age) values ("Robert Downey Jr", "58");
-insert into marvel_actors (fullname, age) values ("Chris Evans", 41);
-insert into marvel_actors (fullname, age) values ("Scarlett Johansson", 38);
-insert into marvel_actors (fullname, age) values ("Chris Hemsworth", 39);
-insert into marvel_actors (fullname, age) values ("Tom Holland", 26);
-insert into marvel_actors (fullname, age) values ("Benedict Cumberbatch", 46);
+insert into marvel_actors (fullname, age)
+values 
+("Robert Downey Jr", "58"),
+("Chris Evans", 41),
+("Scarlett Johansson", 38),
+("Chris Hemsworth", 39),
+("Tom Holland", 26),
+("Benedict Cumberbatch", 46);
 
 
 
@@ -25,18 +27,20 @@ Create table marvel_movies
     movie_name TEXT,
     release_year INTEGER);
     
-insert into marvel_movies (person_id, movie_name, release_year) values (1, "Iron Man", 2008);
-insert into marvel_movies (person_id, movie_name, release_year) values (1, "The Avengers", 2012);
-insert into marvel_movies (person_id, movie_name, release_year) values (2, "Captain America: The Winter Soldier", 2014);
-insert into marvel_movies (person_id, movie_name, release_year) values (2, "Captain America: Civil War", 2016);
-insert into marvel_movies (person_id, movie_name, release_year) values (3, "Black Widow", 2021);
-insert into marvel_movies (person_id, movie_name, release_year) values (3, "Avengers: Age of Ultron", 2015);
-insert into marvel_movies (person_id, movie_name, release_year) values (4, "Thor: Ragnarok", 2017);
-insert into marvel_movies (person_id, movie_name, release_year) values (4, "The Avengers", 2012);
-insert into marvel_movies (person_id, movie_name, release_year) values (5, "Spider-Man: Homecoming", 2017);
-insert into marvel_movies (person_id, movie_name, release_year) values (5, "Avengers: Endgame", 2019);
-insert into marvel_movies (person_id, movie_name, release_year) values (6, "Dr. Strange", 2016);
-insert into marvel_movies (person_id, movie_name, release_year) values (6, "Avengers Infinity War", 2018);
+insert into marvel_movies (person_id, movie_name, release_year)
+values
+(1, "Iron Man", 2008),
+(1, "The Avengers", 2012),
+(2, "Captain America: The Winter Soldier", 2014),
+(2, "Captain America: Civil War", 2016),
+(3, "Black Widow", 2021),
+(3, "Avengers: Age of Ultron", 2015),
+(4, "Thor: Ragnarok", 2017),
+(4, "The Avengers", 2012),
+(5, "Spider-Man: Homecoming", 2017),
+(5, "Avengers: Endgame", 2019),
+(6, "Dr. Strange", 2016),
+(6, "Avengers Infinity War", 2018);
 
 
 
